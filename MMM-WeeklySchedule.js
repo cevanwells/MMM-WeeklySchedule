@@ -105,7 +105,7 @@ Module.register("MMM-WeeklySchedule", {
 		var tr = document.createElement("tr");
 		var td = document.createElement("td");
 		var text = document.createTextNode(text); 
-		td.className = "xsmall bright lesson";
+		td.className = "small bright lesson";
 
 		wrapper.appendChild(tr);
 		tr.appendChild(td);
@@ -118,7 +118,7 @@ Module.register("MMM-WeeklySchedule", {
 		var row = document.createElement("tr");
 
 		var tdtime = document.createElement("td");
-		tdtime.className = "xsmall dimmed lessontime";
+		tdtime.className = "small dimmed lessontime";
 		if (this.config.allowHTML) {
 			tdtime.innerHTML  = time;
 		} else {
@@ -129,7 +129,7 @@ Module.register("MMM-WeeklySchedule", {
 		row.appendChild(tdtime);
 
 		var tdlesson = document.createElement("td");
-		tdlesson.className = "xsmall bright lesson";
+		tdlesson.className = "small bright lesson";
 		if (this.config.allowHTML) {
 			tdlesson.innerHTML  = lesson;
 		} else {
